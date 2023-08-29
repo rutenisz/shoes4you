@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoes4you</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">Shoes4you</div>
+      <ul class="nav">
+        <li><a href="./index.html">All shoes</a></li>
+        <li><a href="./addproduct.html">Add shoes</a></li>
+      </ul>
+    </header>
+
+    <div class="shoes-container">
+      <div class="">
+        <img id="shoes-image" alt="shoes-image" class="shoes-img" />
+      </div>
+      <div class="shoes-info">
+        <h1 id="title" class="title"></h1>
+        <h4 id="description" class="description"></h4>
+        <h3 id="price" class="price"></h3>
+        <div class="location" id="location"></div>
+        <div class="id" id="id"></div>
+
+        <button class="delete-btn" id="delete-btn">Delete shoes</button>
+      </div>
+      <div class="info-msg" id="info-msg"></div>
+    </div>
+
+    <script src="./product.js"></script>
+  </body>
+</html>
