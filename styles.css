@@ -3,18 +3,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (max-width: 768px) {
-  header {
-    height: 40px;
-    background-color: rgb(211, 148, 31);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-}
-
 header {
   height: 70px;
   background-color: rgb(211, 148, 31);
@@ -118,4 +106,56 @@ header {
 
 .delete-btn:hover {
   background-color: rgb(190, 82, 82);
+}
+
+@media (max-width: 768px) {
+  .shoes-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .shoes-card-wrapper {
+    width: 40%;
+    height: auto;
+  }
+
+  .shoes-container {
+    grid-template-columns: 1fr;
+  }
+
+  .shoes-img {
+    padding-left: 0;
+    object-fit: cover;
+  }
+
+  .shoes-info {
+    padding: 1rem;
+  }
+
+  .delete-btn {
+    margin-top: 1rem;
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+
+  header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .nav {
+    gap: 1rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .shoes-form {
+    width: 80%;
+    margin: auto;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
 }
