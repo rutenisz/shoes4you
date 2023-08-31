@@ -3,7 +3,7 @@ const shoesFormBtn = document.getElementById("shoes-btn");
 const getShoesObject = () => {
   const shoesTitle = document.getElementById("shoes-title").value;
   const shoesPrice = document.getElementById("shoes-price").value;
-  const shoesImg = document.getElementById("shoes-image");
+  const shoesImg = document.getElementById("shoes-image").value;
   const shoesDescription = document.getElementById("shoes-description").value;
   const shoesLocation = document.getElementById("shoes-location").value;
   const shoesId = document.getElementById("shoes-location").value;
@@ -27,9 +27,9 @@ const getShoesObject = () => {
       throw new Error("Input is empty");
     }
 
-    if (!urlRegex.test(shoesImg)) {
-      throw new Error("Error link");
-    }
+    // if (!urlRegex.test(shoesImg)) {
+    //   throw new Error("Error link");
+    // }
 
     if (!shoesDescription) {
       throw new Error("Input is empty");
@@ -61,7 +61,7 @@ const getShoesObject = () => {
     location: shoesLocation,
     id: shoesId,
   };
-
+  console.log(shoe);
   return shoe;
 };
 
@@ -100,6 +100,8 @@ const shoesFormInserted = (data) => {
 };
 
 shoesFormBtn.addEventListener("click", async () => {
+  console.log("Button clicked");
+
   const shoe = getShoesObject();
   const data = await insertShoes(shoe);
   shoesFormInserted(data);

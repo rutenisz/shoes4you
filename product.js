@@ -3,7 +3,7 @@ const SHOES_URL = "https://64ecaea3f9b2b70f2bfac871.mockapi.io/product/";
 const deleteBtn = document.getElementById("delete-btn");
 
 const url = new URL(window.location.href); // leidzia issitruakti parametrus is url
-const shoeId = url.searchParams.get("shoesId");
+const shoeId = url.searchParams.get("shoeId");
 
 const addShoesToScreen = (shoes) => {
   const title = document.getElementById("title");
